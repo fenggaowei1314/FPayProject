@@ -22,7 +22,7 @@ s.platform     = :ios, "7.0"
 
 s.source       = { :git => "https://github.com/fenggaowei1314/FPayProject.git", :tag => s.version }
 
-s.source_files  = "Classes", "FPayProject/FPayProject/Classes/**/*.{h,m}”
+s.source_files  = "Classes", "FPayProject/FPayProject/Classes/**/*.{h,m}"
 
 s.requires_arc = true
 
