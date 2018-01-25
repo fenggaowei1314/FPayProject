@@ -1,37 +1,33 @@
 
 
+
 Pod::Spec.new do |s|
-
   s.name             = "FPayProject"
-
   s.version          = "1.0.0"
-
-  s.summary          = "一个建立pod仓库的简单demo"
-
+  s.summary          = "A marquee view used on iOS."
   s.description      = <<-DESC
-                       这只是一个建立pod仓库的简单demo，并没有实际的意思,教学使用
+                       It is a marquee view used on iOS, which implement by Objective-C.
                        DESC
-
-  s.homepage         = "https://github.com/fenggaowei1314/FPayProject"
-
+  s.homepage         = "https://github.com/wangzz/WZMarqueeView"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-
   s.license          = 'MIT'
+  s.author           = { "王中周" => "wzzvictory_tjsd@163.com" }
+  s.source           = { :git => "https://github.com/wangzz/WZMarqueeView.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/NAME'
 
-  s.author           = { "fenggaowei" => "f18911739766@126.com"}
-
-  s.source           = { :git => "https://github.com/fenggaowei1314/FPayProject.git", :tag => s.version }
-
-
-  s.platform     = :ios, '5.0'
- 
+  s.platform     = :ios, '4.3'
+  # s.ios.deployment_target = '5.0'
+  # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = "Classes", "FPayProject/FPayProject/Classes/**/*.{h,m}"
-
+  s.source_files = 'WZMarqueeView/*'
   # s.resources = 'Assets'
 
+  # s.ios.exclude_files = 'Classes/osx'
+  # s.osx.exclude_files = 'Classes/ios'
+  # s.public_header_files = 'Classes/**/*.h'
   s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
 
-
 end
+
+
